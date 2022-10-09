@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dsD-OW-ROI">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fBu-A5-GQe">
+                                        <rect key="frame" x="40" y="87" width="310" height="683"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kez-FR-7Sh">
+                                                <rect key="frame" x="20" y="20" width="42" height="80"/>
+                                                <color key="backgroundColor" systemColor="linkColor"/>
+                                                <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="wJV-3B-9Qu"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="kez-FR-7Sh" firstAttribute="leading" secondItem="fBu-A5-GQe" secondAttribute="leading" constant="20" id="Pwr-wR-8xN"/>
+                                            <constraint firstItem="kez-FR-7Sh" firstAttribute="top" secondItem="fBu-A5-GQe" secondAttribute="top" constant="20" id="soG-gj-eSB"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="tintColor"/>
+                                <constraints>
+                                    <constraint firstItem="fBu-A5-GQe" firstAttribute="top" secondItem="dsD-OW-ROI" secondAttribute="topMargin" id="28W-r0-S2d"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="fBu-A5-GQe" secondAttribute="bottom" id="BuI-DV-RIB"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="fBu-A5-GQe" secondAttribute="trailing" id="EX4-e2-fyl"/>
+                                    <constraint firstItem="fBu-A5-GQe" firstAttribute="leading" secondItem="dsD-OW-ROI" secondAttribute="leadingMargin" id="xyC-JS-2r5"/>
+                                </constraints>
+                                <directionalEdgeInsets key="directionalLayoutMargins" top="40" leading="40" bottom="40" trailing="40"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="dsD-OW-ROI" secondAttribute="trailing" id="5bQ-fu-cyH"/>
+                            <constraint firstItem="dsD-OW-ROI" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="8GC-ix-9JF"/>
+                            <constraint firstAttribute="bottom" secondItem="dsD-OW-ROI" secondAttribute="bottom" id="FBU-bY-eKb"/>
+                            <constraint firstItem="dsD-OW-ROI" firstAttribute="bottom" secondItem="5EZ-qb-Rvc" secondAttribute="bottomMargin" id="Ono-T0-vhT"/>
+                            <constraint firstItem="dsD-OW-ROI" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="c6b-UI-z2y"/>
+                            <constraint firstItem="dsD-OW-ROI" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="topMargin" id="dsb-7a-EeF"/>
+                            <constraint firstItem="dsD-OW-ROI" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leadingMargin" id="hOR-ry-GDn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dsD-OW-ROI" secondAttribute="trailing" id="rel-pQ-v2P"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18" y="4"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

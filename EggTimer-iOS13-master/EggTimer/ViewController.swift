@@ -71,7 +71,7 @@ class ViewController: UIViewController {
             
             return
         }
-        progressLabel.text = String(format: "%.f Seconds left", timerNum)
+        progressLabel.text = String(format: "%. f Seconds left", timerNum)
         timerNum -= 0.01
     }
     
